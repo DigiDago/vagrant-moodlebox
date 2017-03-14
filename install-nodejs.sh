@@ -8,6 +8,6 @@ echo 'eval "$(nodenv init -)"' >> ~/.bash_profile
 git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 echo 'export PATH="$HOME/.nodenv/plugins/node-build/bin:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
-nodenv install 6
-nodenv shell 6
+nodenv install 6.0.0
+nodenv shell 6.0.0
 nodenv rehash

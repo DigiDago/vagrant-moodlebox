@@ -3,6 +3,7 @@
 sudo debconf-set-selections <<< 'mysql-apt-config mysql-apt-config/select-server select mysql-5.7'
 sudo debconf-set-selections <<< 'mysql-apt-config mysql-apt-config/select-product select Ok'
 sudo DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/mysql-apt-config_0.7.3-1_all.deb
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5072E1F5
 sudo apt-get update
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password '
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password '

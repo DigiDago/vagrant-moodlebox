@@ -1,7 +1,7 @@
 server {
     listen 80;
     listen [::]:80;
-    server_name localhost webserver.vm 192.168.1.2;
+    server_name localhost;
     index index.php index.html index.htm;
 
     root /home/vagrant/public_html;

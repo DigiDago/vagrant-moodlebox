@@ -2,9 +2,10 @@ Vagrant.configure(2) do |config|
   config.vm.box = "debian/jessie64"
   config.vm.box_check_update = false
   config.vm.hostname = "webserver.vm"
-  config.vm.network "private_network", ip: "192.168.1.2"
+  # config.vm.network "private_network", ip: "192.168.1.2"
+  config.vm.network "forwarded_port", guest: 80, host: 80
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "moodlebox"
+    vb.name = "moodlebox-new-31"
     vb.gui = false
     vb.memory = "1024"
     vb.customize ["modifyvm", :id, "--vram", "8"]
