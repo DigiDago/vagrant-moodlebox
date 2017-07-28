@@ -1,6 +1,6 @@
 ## MoodleBox
 
-This repository is a [Vagrant](https://www.vagrantup.com/) box to build up a Debian server running NGINX (latest), PHP 7, MySQL 5.7, NodeJS 6 and Moodle 3.1.
+This repository is a [Vagrant](https://www.vagrantup.com/) box to build up a Debian server running NGINX (latest), PHP 7, MySQL 5.7, NodeJS 6 and Moodle 3.3.1.
 
 ====================
 #### Instructions
